@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 /** A class that generates random strings, random colours, and random integers. */
-public class RandomWords {
+public class RandomGenerator {
 	
 	ArrayList<String> sDictionary = new ArrayList<String>();
 	public static final String[] COLOURS = {"blue", "red", "green", "yellow", "grey", 
@@ -19,7 +19,7 @@ public class RandomWords {
 	 * Creates a RandomWords object and creates an Arraylist of Strings from the text file
 	 * ScrabbleDictionary.txt to be used for random String generation.
 	 */
-	public RandomWords() 
+	public RandomGenerator() 
 	{
 		try(BufferedReader br = new BufferedReader(new FileReader("C:/Users/Evannnn/Desktop/uh/younanev/Week4Lab/src/life/ScrabbleDictionary.txt"))) 
 		{

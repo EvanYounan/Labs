@@ -12,7 +12,7 @@ public class ReefSimulator {
 		//Create a Reef
 		Reef coralReef = new Reef("Coral Reef", 50);
 		LinkedList<Organism> listOfTempOrganisms = new LinkedList<Organism>();
-		RandomWords dict = new RandomWords();
+		RandomGenerator dict = new RandomGenerator();
 		
 		//append Eels, Goldfishes, Sharks, and Algaes to a LinkedList of Organisms
 		for (int i = 0; i < 10; i++) {
