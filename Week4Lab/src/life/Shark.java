@@ -18,7 +18,7 @@ public class Shark extends Organism {
      * @param size the size of the Shark
      */
 	public Shark(String name, int xCoord, int yCoord, int speed, String direction, String colour, int size) {
-		super(name, xCoord, yCoord, speed, direction, colour, size);
+		super(name, xCoord, yCoord, speed, direction, colour, size, "Shark");
 	}
 
 	@Override

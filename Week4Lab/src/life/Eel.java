@@ -19,7 +19,7 @@ public class Eel extends Organism{
      */
 	public Eel(String name, int xCoord, int yCoord, int speed,
 	        String direction, String colour, int size) {
-		super(name, xCoord, yCoord, speed, direction, colour, size);
+		super(name, xCoord, yCoord, speed, direction, colour, size, "Eel");
 	}
 	
 	@Override

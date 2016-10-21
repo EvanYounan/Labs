@@ -19,7 +19,7 @@ public class Goldfish extends Organism {
      */
 	public Goldfish(String name, int xCoord, int yCoord, int speed,
 	        String direction, String colour, int size) {
-		super(name, xCoord, yCoord, speed, direction, colour, size);
+		super(name, xCoord, yCoord, speed, direction, colour, size, "Goldfish");
 		
 	}
 

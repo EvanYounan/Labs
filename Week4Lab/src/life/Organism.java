@@ -32,6 +32,8 @@ public abstract class Organism {
     /** The size of the Organism */
     protected int size;
     
+    /** The type of Organism */
+    protected String type = "";
     /**
      * Creates a new Organism with the given name, x and y coordinates, 
      * speed, and direction.
@@ -43,7 +45,7 @@ public abstract class Organism {
      *        must be one of VALID_DIRECTIONS
      */
     public Organism(String name, int xCoord, int yCoord, int speed,
-        String direction, String colour, int size) {
+        String direction, String colour, int size, String type) {
         this.name = name;
         this.xCoord = xCoord;
         this.yCoord = yCoord;
@@ -51,6 +53,7 @@ public abstract class Organism {
         this.speed = speed;
         this.colour = colour;
         this.size = size;
+        this.type = type;
     }
     
     /**

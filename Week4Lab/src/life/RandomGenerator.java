@@ -1,11 +1,18 @@
 package life;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
+
+import javax.annotation.Resources;
 
 /** A class that generates random strings, random colours, and random integers. */
 public class RandomGenerator {
@@ -21,7 +28,10 @@ public class RandomGenerator {
 	 */
 	public RandomGenerator() 
 	{
-		try(BufferedReader br = new BufferedReader(new FileReader("C:/Users/Evannnn/Desktop/uh/younanev/Week4Lab/src/life/ScrabbleDictionary.txt"))) 
+		File file = new File("resources/ScrabbleDictionary.txt");
+		String absolutePath = file.getAbsolutePath();
+		
+		try(BufferedReader br = new BufferedReader(new FileReader(absolutePath))) 
 		{
 			String line = br.readLine();
 			
@@ -29,9 +39,8 @@ public class RandomGenerator {
 				sDictionary.add(line);
 				line = br.readLine();
 			}
-		}
-		catch (IOException e) {
-			System.out.println("This file was not found!");
+		} catch (IOException e) {
+			System.out.println("The file was not found!");
 		}
 	}
 	

@@ -17,8 +17,9 @@ public class Algae extends Organism {
      * @param colour the colour of the Algae
      * @param size the size of the Algae
      */
-	public Algae(String name, int xCoord, int yCoord, int speed, String direction, String colour, int size) {
-		super(name, xCoord, yCoord, speed, direction, colour, size);
+	public Algae(String name, int xCoord, int yCoord, int speed,
+			String direction, String colour, int size) {
+		super(name, xCoord, yCoord, speed, direction, colour, size, "Algae");
 	}
 
 	@Override

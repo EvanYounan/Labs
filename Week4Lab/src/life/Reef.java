@@ -171,7 +171,7 @@ public class Reef {
 	 * @param y Organism to consume or be consumed
 	 */
 	public void consume(Organism x, Organism y) {
-		if (x.xCoord == y.xCoord && x.yCoord == y.yCoord) 
+		if (x.xCoord == y.xCoord && x.yCoord == y.yCoord && x.type != y.type) 
 		{
 			if (x.size > y.size) {
 				System.out.println(x.name + " ate " + y.name);
